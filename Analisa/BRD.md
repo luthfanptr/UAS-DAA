@@ -1,6 +1,6 @@
 # Rancangan Aplikasi Web Berbasis IoT untuk Pemantauan Kualitas Udara
 
-## 1.1. Latar Belakang
+## Latar Belakang
 Peningkatan polusi udara menjadi perhatian global yang memerlukan pemantauan yang cukup ketat. Banyaknya kegiatan manusia yang dapat menyebabkan polusi setiap harinya seperti asap pabrik, kendaraan, sampah, asap rokok, dapat memicu terjadinya gangguan pernapasan seperti asma, ISPA, dan kanker paru-paru. Dengan meningkatnya polusi udara, kebutuhan akan sistem pemantauan kualitas udara secara real-time menjadi sangat penting. 
 
 Di sisi lain, kemajuan teknologi **Internet of Things** (IoT) memungkinkan pengembangan sistem pemantauan yang terintegrasi dan efisien. Dengan memanfaatkan sensor-sensor cerdas yang terhubung ke internet, data kualitas udara dapat dikumpulkan, diproses, dan disajikan secara real-time melalui platform digital. Aplikasi web berbasis IoT menjadi solusi yang tepat untuk memenuhi kebutuhan ini, karena dapat memberikan akses informasi yang mudah dan cepat kepada pengguna.
@@ -8,6 +8,27 @@ Di sisi lain, kemajuan teknologi **Internet of Things** (IoT) memungkinkan penge
 Aplikasi ini diharapkan dapat meningkatkan kesadaran masyarakat tentang pentingnya menjaga kualitas udara dan mendorong partisipasi aktif dalam upaya pelestarian lingkungan.
 
 ---
+
+## Analisis 5W+1H:
+- **What (Apa)**: 
+    + Aplikasi web berbasis IoT yang dapat memantau kualitas udara secara real-time, dengan data yang meliputi suhu, kelembaban, dan tingkat polusi. Pengguna dapat mengakses data melalui dashboard dan menerima notifikasi jika kualitas udara berbahaya.
+- **Why (Mengapa)**: 
+    + Peningkatan polusi udara menjadi masalah kesehatan global. Sistem ini dirancang untuk membantu pengguna dalam memantau kualitas udara untuk mencegah gangguan kesehatan.
+    + Aplikasi berbasis IoT memungkinkan pengumpulan data secara real-time dan memberikan akses yang lebih cepat kepada pengguna.
+- **When (Kapan)**:
+    + Saat pengguna ingin memantau kualitas udara. 
+    + Saat pengguna ingin mengambil tindakan preventif untuk menjaga lingkungan. 
+- **Where (Dimana)**: 
+    + Sistem dapat digunakan dimana saja, dan dapat diakses melalui aplikasi web menggunakan browser.
+- **Who (Siapa)**: 
+    + Administrator sebagai penanggung jawab untuk mengelola data, memperbarui status, dan membuat laporan berkala.
+    + Pengguna (Masyarakat, Organisasi Lingkungan, Pemerintah): Melakukan pemantauan kualitas udara di sekitar lingkungan mereka, menerima notifikasi dan melihat laporan kualitas udara.
+- **How (Bagaimana)**: 
+    + Sensor IoT mengumpulkan data kualitas udara dan mengirimkan data melalui API ke server.
+    + Server menerima data dari perangkat IoT dan menyimpannya kedalam database MySQL.
+    + Admin menerima dan mengelola data untuk dijadikan laporan yang kemudian akan diunggah, serta memperbarui status sensor perangkat IoT.
+    + Pengguna mengakses aplikasi web untuk melihat data secara real-time.
+    ---
 
 ## Tujuan Proyek
 - Mengembangkan sistem pemantauan kualitas udara secara real-time berbasis website.
