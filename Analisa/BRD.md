@@ -14,7 +14,7 @@ Aplikasi ini diharapkan dapat meningkatkan kesadaran masyarakat tentang pentingn
     + Aplikasi web berbasis IoT yang dapat memantau kualitas udara secara real-time, dengan data yang meliputi suhu, kelembaban, dan tingkat polusi. Pengguna dapat mengakses data melalui dashboard dan menerima notifikasi jika kualitas udara berbahaya.
 - **Why (Mengapa)**: 
     + Peningkatan polusi udara menjadi masalah kesehatan global. Sistem ini dirancang untuk membantu pengguna dalam memantau kualitas udara untuk mencegah gangguan kesehatan.
-    + Aplikasi berbasis IoT memungkinkan pengumpulan data secara real-time dan memberikan akses yang lebih cepat kepada pengguna.
+    + Aplikasi web berbasis IoT memungkinkan pengumpulan data secara real-time dan memberikan akses yang lebih cepat kepada pengguna.
 - **When (Kapan)**:
     + Saat pengguna ingin memantau kualitas udara. 
     + Saat pengguna ingin mengambil tindakan preventif untuk menjaga lingkungan. 
