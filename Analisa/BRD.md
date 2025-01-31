@@ -115,5 +115,5 @@ Stakeholder yang terlibat langsung dalam penggunaan atau berinteraksi dengan sis
 
 ---
 
-## 9. Kesimpulan
+## Kesimpulan
 Dokumen ini menjelaskan kebutuhan bisnis dan teknis untuk aplikasi pemantauan kualitas udara berbasis IoT. Dengan implementasi yang sesuai, sistem ini dapat memberikan data kualitas udara secara real-time dan membantu dalam pengambilan keputusan berbasis lingkungan.
