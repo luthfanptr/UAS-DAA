@@ -1,0 +1,23 @@
+@startuml usecase
+actor Admin
+actor Pengguna as "Pengguna Akhir"
+left to right direction
+rectangle "Sistem Pemantauan Kualitas Udara IoT" {
+    usecase "Mengelola Data Kualitas Udara" as UC1
+    usecase "Mengelola Status Sensor" as UC2
+    usecase "Mengirimkan Notifikasi" as UC3
+    usecase "Membuat dan Mengunggah Laporan Kualitas Udara" as UC4
+    usecase "Melihat Index Kualitas Udara" as UC5
+    usecase "Melihat Laporan Statistik Kualitas Udara" as UC6
+    usecase "Melihat Status Sensor" as UC7
+
+    Admin -- UC1
+    Admin -- UC2
+    Admin -- UC3
+    Admin -- UC4
+
+    Pengguna -- UC5
+    Pengguna -- UC6
+    Pengguna -- UC7
+}
+@enduml

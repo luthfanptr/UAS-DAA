@@ -1,0 +1,40 @@
+@startuml flow
+start
+:Halaman Login;
+:Masukkan Kredensial Login;
+if (Login Sukses?) then (Yes)
+  :Tentukan Peran Pengguna;
+  if (Login sebagai Admin?) then (Yes)
+    :Masuk ke Dashboard Admin;
+    :Periksa Status Sensor;
+    if (Ada Sensor yang Rusak?) then (Yes)
+      :Perbaiki Sensor;
+      :Update Status Sensor;
+    else (No)
+      :Update Status Sensor;
+    endif
+    :Perbarui Indeks Kualitas Udara;
+    :Kirim Pemberitahuan ke Pengguna;
+    :Generate Laporan Kualitas Udara Mingguan/Bulanan;
+    :Unggah Laporan;
+    stop
+  else (No)
+    :Masuk ke Dashboard Pengguna;
+    :Periksa Kualitas Udara;
+    if (Apakah Kualitas Udara Berbahaya?) then (Yes)
+      :Menerima Notifikasi;
+      :Menerima Pesan Peringatan;
+      stop
+    else (No)
+      :Tampilkan Data Kualitas Udara;
+      :Pilih Lokasi;
+      :Lihat Grafik Kualitas Udara;
+      :Lihat Laporan Mingguan/Bulanan;
+      stop
+    endif
+  endif
+else (No)
+  :Tampilkan Pesan Error;
+  stop
+endif
+@enduml

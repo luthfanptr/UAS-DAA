@@ -1,0 +1,73 @@
+@startuml puml
+class SensorOverview {
+    +id_sensor : int <<PK>>
+    --
+    +sensorType : string 
+    +sensorStatus : string 
+    +temperature_celcius : float
+    +humidity_percent : float 
+    +float pollution_level
+    +location : string 
+    +timestamps()
+    +updateStatus()
+    +getData()
+}
+
+class AirQuality {
+    +id_quality : int <<PK>>
+    --
+    +id_sensor : int 
+    +temperature_celcius : float
+    +humidity_percent : float 
+    +timestamps()
+    +recordData()
+    +generateReport()
+}
+
+class User {
+    +id_user : int <<PK>>
+    +name : string
+    +email : string 
+    +password : string 
+    +timestamps()
+    +login()
+    +logout()
+    +receiveNotification()
+}
+
+class Admin {
+    +id_admin : int <<PK>>
+    +timestamps()
+    +updateAirQualityIndex()
+    +manageSensors()
+    +generateReports()
+}
+
+class NotificationLog {
+    +id_log : int <<PK>>
+    --
+    +id_user : int 
+    +message : string
+    +timestamps()
+    +sendNotification()
+}
+
+class SummaryReport {
+    +id_report : int <<PK>>
+    --
+    +report_type : string 
+    +start_date : date 
+    +end_date : date 
+    +content : string 
+    +timestamps()
+    +generateReport()
+    +uploadReport()
+}
+
+SensorOverview "1" *-- "*" AirQuality : melacak
+AirQuality "1" *-- "*" User : menerima data 
+User "1" *-- "*" NotificationLog : menerima
+Admin "1" *-- "*" SensorOverview : mengelola
+Admin "1" *-- "*" SummaryReport : membuat
+
+@enduml
